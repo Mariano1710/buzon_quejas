@@ -15,4 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+    
+    //rutas de controlador Quejas//
+Route::post('/nuevaQueja','HomeController@nuevaQueja')->name('nuevaQueja');
+Route::get('/getLisQuejas','HomeController@getLisQuejas')->name('getLisQuejas');
 });
